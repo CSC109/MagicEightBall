@@ -11,24 +11,27 @@ public class MagicEightBall {
 		int randomNumber = new Random().nextInt(5);
 		String answer = "";
 
-		if (randomNumber == 0) {
-			answer = "Yes";
-		} else if (randomNumber == 1) {
-			answer = "No";
-		} else if (randomNumber == 2) {
-			answer = "Definitely";
-		} else if (randomNumber == 3) {
-			answer = "Doubtful";
-		} else {
-			answer = "Maybe";
+		switch (randomNumber) {
+			case 0:
+				answer = "Yes";
+				break;
+			case 1:
+				answer = "No";
+				break;
+			case 2:
+				answer = "Definitely";
+				break;
+			case 3:
+				answer = "Doubtful";
+				break;
+			default:
+				answer = "Maybe";
+				break;
 		}
-
+		
 		System.out.println("The answer to your question of " + question + " is: " + answer + ".");
 	}
 }
-
-
-
 
 
 
