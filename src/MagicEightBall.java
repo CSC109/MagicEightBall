@@ -20,9 +20,15 @@ public class MagicEightBall {
 		} else if (randomNumber == 3) {
 			answer = "Doubtful";
 		} else {
-			answer = "Please try again later";
+			answer = "Maybe";
 		}
 
 		System.out.println("The answer to your question of " + question + " is: " + answer + ".");
 	}
 }
+
+
+
+
+
+
